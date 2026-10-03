@@ -1,24 +1,42 @@
-<style>
-    button {
-        background-color: red;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 10px;
-        font-size: 20px;
-    }
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cart quantity</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">Show Quantity</button>
 
-<button  
-onclick="
-alert('good job');
-">hello</button>
-<p>Lorem ipsum dolor sit amet button
-    <button>Hello</button> consectetur adipisicing elit. Ducimus, rerum?
-</p>
+    <button onclick="
+    cartQuantity=cartQuantity+1;
+    console.log(`cart Quantity : ${cartQuantity}`)
+    ">Add To cart</button>
 
+    <button onclick="
+    // cartQuantity=cartQuantity+2
+    cartQuantity+=2;
+    console.log(`cart Quantity : ${cartQuantity}`)
+    ">+2</button>
 
-<script>
-   console.log(2+2)
-   console.log('some'+'text')
-</script>
+    <button onclick="
+    cartQuantity=cartQuantity+3
+    console.log(`cart Quantity : ${cartQuantity}`)
+    ">+3</button>
+
+    <button onclick="
+    cartQuantity=0;
+    console.log('cart was reset');
+    console.log(`cart Quantity : ${cartQuantity}`)
+    ">Reset cart</button>
+
+  <script>
+    let cartQuantity = 0;
+
+  </script>
+  </body>
+</html>
