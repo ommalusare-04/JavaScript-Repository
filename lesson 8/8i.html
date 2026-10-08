@@ -1,0 +1,13 @@
+<body>
+    <button onclick="
+        playGame('tail')">Tail</button>
+    <button onclick="
+    playGame('head')">Head</button>
+</body>
+<script>
+    function playGame(guess){
+        const random=Math.random()
+        const result=random < 0.5?'head':'tail'
+        console.log(guess === result ? 'you win':'you loss')
+    };
+</script>
